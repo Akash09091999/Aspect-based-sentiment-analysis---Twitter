@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "a8c508cc-f04a-4625-904a-bfbe1209df05",
+		"name": "sanlp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aspect local",
+			"item": [
+				{
+					"name": "add_hashtag",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hashtag",
+									"value": "%23myname",
+									"type": "text"
+								},
+								{
+									"key": "aspects",
+									"value": "avi,hardik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/add_hashtag_aspect/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"add_hashtag_aspect",
+								""
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": "myname",
+									"disabled": true
+								},
+								{
+									"key": "aspects",
+									"value": "avi, vishal,hardik",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-sentiment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-sentiment/?hashtag=%23corona",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-sentiment",
+								""
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": "%23corona"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-range-sentiment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-range-sentiment/?hashtag=%23myname&start=2020-03-29&end=2020-03-30",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-range-sentiment",
+								""
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": "%23myname"
+								},
+								{
+									"key": "start",
+									"value": "2020-03-29"
+								},
+								{
+									"key": "end",
+									"value": "2020-03-30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gethashtag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/get-hashtags/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"get-hashtags",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "server",
+			"item": [
+				{
+					"name": "get-sentiment-range",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hashtag",
+									"value": "Jafrabad",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "start",
+									"value": "2019-02-23",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "end",
+									"value": "2019-02-24",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://104.155.161.90:8000/get-range-sentiment/?hashtag=%23namastetrump&start=2020-02-24&end=2020-02-24",
+							"protocol": "http",
+							"host": [
+								"104",
+								"155",
+								"161",
+								"90"
+							],
+							"port": "8000",
+							"path": [
+								"get-range-sentiment",
+								""
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": "%23namastetrump"
+								},
+								{
+									"key": "start",
+									"value": "2020-02-24"
+								},
+								{
+									"key": "end",
+									"value": "2020-02-24"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_hashtag",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hashtag",
+									"value": "#100DaysOfCode",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://104.155.161.90:8000/add_hashtag/",
+							"protocol": "http",
+							"host": [
+								"104",
+								"155",
+								"161",
+								"90"
+							],
+							"port": "8000",
+							"path": [
+								"add_hashtag",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-sentiment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://104.155.161.90:8000/get-sentiment/?hashtag=%23namastetrump",
+							"protocol": "http",
+							"host": [
+								"104",
+								"155",
+								"161",
+								"90"
+							],
+							"port": "8000",
+							"path": [
+								"get-sentiment",
+								""
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": "%23namastetrump"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hashtag",
+									"value": "#Ivanka",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://104.155.161.90:8000/delete_hashtag/",
+							"protocol": "http",
+							"host": [
+								"104",
+								"155",
+								"161",
+								"90"
+							],
+							"port": "8000",
+							"path": [
+								"delete_hashtag",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gethashtagserver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

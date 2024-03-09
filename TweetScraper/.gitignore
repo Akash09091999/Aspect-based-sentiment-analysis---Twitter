@@ -1,0 +1,16 @@
+Data/
+pyenv/
+*.db
+*.pyc
+*.db-journal
+.vscode/
+venv/
+*.hdf5
+*.pickle
+*.index
+*.meta
+.data-00000-of-00001
+*.pbtxt
+*.pickle
+model.ckpt-349.data-00000-of-00001
+events.out.tfevents.1585492089.a783b3b67d95
