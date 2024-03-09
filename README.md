@@ -4,7 +4,9 @@ Idea : Sentiment anaysys of Text and Aspect based sentiment anaysis of Text
 
 Technology stack used : Python,Django,Scrapy,Tensorflow,BERT
 
-Video : https://www.youtube.com/watch?v=AhVbHUnbrDs&t=15s
+Presentation : https://docs.google.com/presentation/d/1Tqfm6qf1m_QT0F0SRWJrKAZiL4femIs1/edit?usp=drive_link&ouid=103365333624545004182&rtpof=true&sd=true
+
+Publication : https://www.techrxiv.org/doi/full/10.36227/techrxiv.21699203.v1
 
 --------------------------------------------------------
 
